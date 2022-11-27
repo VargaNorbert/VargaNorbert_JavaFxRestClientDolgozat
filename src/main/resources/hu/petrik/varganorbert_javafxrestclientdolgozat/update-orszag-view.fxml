@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="20.0" prefHeight="480.0" prefWidth="640.0" vgap="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.petrik.varganorbert_javafxrestclientdolgozat.UpdateOrszagController">
+    <columnConstraints>
+        <ColumnConstraints maxWidth="78.0" minWidth="50.0" prefWidth="78.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="525.0" minWidth="100.0" prefWidth="502.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label prefHeight="17.0" prefWidth="30.0" text="Név" GridPane.halignment="RIGHT" />
+        <Label text="Lakosság:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+        <Label text="Eu_tagállam:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+        <TextField fx:id="nevField" GridPane.columnIndex="1" />
+        <Spinner fx:id="lakossagField" prefWidth="2000.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="tagallamField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateClick" prefWidth="Infinity" text="Update" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+    </children>
+</GridPane>
